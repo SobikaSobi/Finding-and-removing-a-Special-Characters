@@ -1,0 +1,27 @@
+
+
+class HelloWorld {
+    public static void main(String[] args) {
+        String str = "Sobika@06!";
+        int count = 0;
+       // String specialCharacterRemoved= " ";//For removing special character
+        for(int i =0;i<=str.length()-1;i++)
+        {
+            if(!Character.isLetter(str.charAt(i)) && !Character.isDigit(str.charAt(i)) && !Character.isWhitespace(str.charAt(i))){
+            
+                count++;
+            }
+           /* else{
+               specialCharacterRemoved= specialCharacterRemoved+(str.charAt(i));//For removing special character
+            }*/
+        }
+        if(count>0)
+        {
+        System.out.println("Special Characters are found: "+count);
+        }
+       else {
+            System.out.println("Special Characters are  not found");
+        }
+   // System.out.println(specialCharacterRemoved);////For removing special character
+}
+}
